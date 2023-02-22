@@ -66,9 +66,11 @@ To extend my app to a fully functional product for this use case, I would look i
 
 Further, I believe it would be beneficial to add the ability to collect data and user responses within the app. Since hackathons have lots of moving parts and try to improve every year, the ability to gather user responses within the app would be helpful to collect insight and sugestions for future events, as well as document any issues that ever happen. 
 
-### Further considerations
+### Areas of Improvement
 - I recognize that some of the logic in my code to process the dataset was simplified, such as only displaying one speaker (if they exist) or assuming only 3 'types' of events (teal, pink, olive). My code would not stop working if the data was expanded in these categories, however does require more detail in a full-scale project.
 - I believe that my method of filtering the event data given a query string is effective, but not completely efficient as it iterates over the full list of event data at every change in search query. Given the limited number of events a hackathon can host in one weekend (in this case, 15), I was satisfied with this initial solution. However, I would look into optimizing this piece code for larger datasets, perhaps by pre-processing the data to be able to search it more efficiently or by leveraging hashing techniques.
+
+Thank you for reading all the way here!
 
 ## Started with Create React App
 
