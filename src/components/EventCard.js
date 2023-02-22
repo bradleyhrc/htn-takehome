@@ -73,7 +73,7 @@ export default function EventCard({
             onOpen={() => setOpen(true)}
         >
             <Header as='h2'>
-                {name}
+                {id}: {name}
                 <Label color={labelC1}>#{event_type}</Label>
                 <Label color={labelC2}>#{permission}</Label>
                 <p className='eventMeta'>
