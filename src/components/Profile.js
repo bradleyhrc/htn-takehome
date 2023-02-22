@@ -1,12 +1,12 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
-import { Segment, Header, Grid } from 'semantic-ui-react';
+import { Header, Grid } from 'semantic-ui-react';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogoutButton';
 
 import './Profile.css';
 
-// Welcome Text + Logout (if signed in) on one row 
+// Welcome Text + Login/Logout 
 const Profile = () => {
     const { user, isAuthenticated } = useAuth0();
 
@@ -16,7 +16,8 @@ const Profile = () => {
                 <Grid.Row columns={2}>
                     <Grid.Column textAlign='left' width={12}>
                         <Header as='h1'>
-                            🧑‍💻 Happy hacking, {isAuthenticated ? user.name : 'everyone'}!
+                            <span role="img" aria-label="Coding">🧑‍💻 </span>
+                            Happy hacking, {isAuthenticated ? user.name : 'everyone'}!
                         </Header>
                     </Grid.Column>
                     <Grid.Column floated='right' textAlign='right' width={4}>
@@ -30,7 +31,6 @@ const Profile = () => {
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
-            
         </div>
     );
 }

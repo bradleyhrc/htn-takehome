@@ -7,6 +7,6 @@ const Load = () => {
             <Loader />
         </Dimmer>
     );
-}
+};
 
 export default Load;

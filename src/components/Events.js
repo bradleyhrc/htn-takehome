@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { Card, Grid } from 'semantic-ui-react';
+import { Card } from 'semantic-ui-react';
 import EventCard from './EventCard';
 import { useAuth0 } from '@auth0/auth0-react';
 import SearchBar from './SearchBar';
 
 import './Events.css';
 
-export default function Events() {
+const Events = () => {
     // variables for filter/search
     const [key, setKey] = useState('');
     const [filtered, setFiltered] = useState([]); // matches
@@ -14,8 +14,6 @@ export default function Events() {
     const [eventData, setEventData] = useState([]);
     // 
     const { isAuthenticated } = useAuth0();
-
-    const digits = ['1', '2', '3', '4', '5', '6', ]
 
     const matchKey = useCallback((k) => { // reduces re-renders for this function
         // case if key is an integer : for viewing related events
@@ -40,7 +38,7 @@ export default function Events() {
     const viewRelated = useCallback((id) => { // reduces re-renders for this function
         
         const matches = eventData.filter((item) => {
-            return (item.related_events.includes(id) || item.id == id);
+            return (item.related_events.includes(id) || item.id === id);
         });
         setKey(id);
         setFiltered(matches);
@@ -78,5 +76,7 @@ export default function Events() {
                 })}
             </Card.Group>
         </div>
-    )
-}
+    );
+};
+
+export default Events;
