@@ -20,6 +20,13 @@ Note: Environment variables are hidden from this repo and are used to protect se
 - Display private events only when logged in
 - Loading screen
 
+### Images
+![image](https://user-images.githubusercontent.com/50122955/220786821-03860cc5-8d5f-4803-880b-a6095e8dc3a0.png)
+![image](https://user-images.githubusercontent.com/50122955/220787229-4a0c9f0a-875f-48c2-834c-1078f0862ddc.png)
+![image](https://user-images.githubusercontent.com/50122955/220787450-b3a120ef-44df-416b-885c-49ae695a1bfe.png)
+![image](https://user-images.githubusercontent.com/50122955/220787578-7ba97d4e-463e-49f6-849d-5a5ffe0afe19.png)
+![image](https://user-images.githubusercontent.com/50122955/220787699-a2d122b0-1e5b-48d7-bbcc-4abc89742f68.png)
+
 ## Written Response
 
 1. Walk us through your development process as you worked on this project. How did you plan out the structure and design of it? How did decide on the tools you've used? Did you encounter any problems? And if so, how did you solve them? Are there any areas of your code that you're particularly proud of or want to point out?
