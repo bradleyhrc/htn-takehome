@@ -1,12 +1,12 @@
 
 .modalDescr {
     font-size: 16px;
-    opacity: 80%;
+    opacity: 0.8;
 }
 
 .eventMeta {
     font-size: 20px;
-    opacity: 75%;
+    opacity: 0.75;
 }
 
 .link {
