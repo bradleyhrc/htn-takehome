@@ -73,9 +73,10 @@ To extend my app to a fully functional product for this use case, I would look i
 
 Further, I believe it would be beneficial to add the ability to collect data and user responses within the app. Since hackathons have lots of moving parts and try to improve every year, the ability to gather user responses within the app would be helpful to collect insight and sugestions for future events, as well as document any issues that ever happen. 
 
-### Areas of Improvement
+### Areas for Improvement
 - I recognize that some of the logic in my code to process the dataset was simplified, such as only displaying one speaker (if they exist) or assuming only 3 'types' of events (teal, pink, olive). My code would not stop working if the data was expanded in these categories, however does require more detail in a full-scale project.
 - I believe that my method of filtering the event data given a query string is effective, but not completely efficient as it iterates over the full list of event data at every change in search query. Given the limited number of events a hackathon can host in one weekend (in this case, 15), I was satisfied with this initial solution. However, I would look into optimizing this piece code for larger datasets, perhaps by pre-processing the data to be able to search it more efficiently or by leveraging hashing techniques.
+- The app is configured to display content on a desktop or middle-sized screen. While I implemented basic functionality which will collapse elements and make it easier to scroll on a phone, there are some known issues with button alignment. Given additional time, I would look into perfecting the behaviour of my app across all devices.
 
 Thank you for reading all the way here!
 
